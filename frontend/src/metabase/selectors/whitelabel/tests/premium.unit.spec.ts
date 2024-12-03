@@ -70,7 +70,7 @@ describe("getApplicationName (EE with token)", () => {
   it("should return Metabase when application-name is unchanged", () => {
     const { getState } = setup();
 
-    expect(getApplicationName(getState())).toBe("Metabase");
+    expect(getApplicationName(getState())).toBe("Cloud Vision");
   });
 
   it("should return the application when application-name is changed", () => {

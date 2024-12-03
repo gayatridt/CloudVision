@@ -40,7 +40,7 @@
   via trs if a name isn't configured."
   []
   (or (public-settings/application-name)
-      (trs "Metabase")))
+      (trs "Cloud Vision")))
 
 (defn logo-url
   "Return the URL for the application logo. If the logo is the default, return a URL to the Metabase logo."

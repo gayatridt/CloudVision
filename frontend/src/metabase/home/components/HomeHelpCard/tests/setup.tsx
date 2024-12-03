@@ -15,7 +15,7 @@ export interface SetupOpts {
 }
 
 export const setup = ({
-  applicationName = "Metabase",
+  applicationName = "Cloud Vision",
   showMetabaseLinks = true,
   hasEnterprisePlugins,
   tokenFeatures = {},

@@ -15,7 +15,7 @@ function setup({ pulse = createPulse(), hasAttachments = false } = {}) {
 
   const state = createMockState({
     settings: mockSettings({
-      "application-name": "Metabase",
+      "application-name": "Cloud Vision",
     }),
   });
 

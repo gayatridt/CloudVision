@@ -202,7 +202,7 @@ export interface OpenAiModel {
   owned_by: string;
 }
 
-export type HelpLinkSetting = "metabase" | "hidden" | "custom";
+export type HelpLinkSetting = "cloudvision" | "hidden" | "custom";
 
 export interface UploadsSettings {
   db_id: number | null;

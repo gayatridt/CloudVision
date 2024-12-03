@@ -144,7 +144,7 @@
    :embedding_app_origin_sdk_set         (boolean (let [sdk-origins (embed.settings/embedding-app-origins-sdk)]
                                                     (and sdk-origins (not= "localhost:*" sdk-origins))))
    :embedding_app_origin_interactive_set (embed.settings/embedding-app-origins-interactive)
-   :appearance_site_name                 (not= (public-settings/site-name) "Metabase")
+   :appearance_site_name                 (not= (public-settings/site-name) "Cloud Vision")
    :appearance_help_link                 (public-settings/help-link)
    :appearance_logo                      (not= (public-settings/application-logo-url) "app/assets/img/logo.svg")
    :appearance_favicon                   (not= (public-settings/application-favicon-url) "app/assets/img/favicon.ico")

@@ -427,7 +427,7 @@ const HELPER_TEXT_STRINGS: HelpTextConfig[] = [
     name: "domain",
     structure: "domain",
     description: () =>
-      t`Extracts the domain name (eg. "metabase") from a URL or email`,
+      t`Extracts the domain name (eg. "Cloud Vision") from a URL or email`,
     args: [
       {
         name: t`urlOrEmail`,

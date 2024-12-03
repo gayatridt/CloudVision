@@ -154,7 +154,7 @@ export const createMockSettings = (
   "application-font": "Lato",
   "application-font-files": [],
   // eslint-disable-next-line no-literal-metabase-strings -- This is a mock
-  "application-name": "Metabase",
+  "application-name": "Cloud Vision",
   "available-fonts": [],
   "available-locales": null,
   "bcc-enabled?": true,
@@ -162,7 +162,7 @@ export const createMockSettings = (
   "custom-formatting": {},
   "custom-homepage": false,
   "custom-homepage-dashboard": null,
-  "help-link": "metabase",
+  "help-link": "cloudvision",
   "help-link-custom-destination": "",
   "deprecation-notice-version": undefined,
   "ee-ai-features-enabled": false,

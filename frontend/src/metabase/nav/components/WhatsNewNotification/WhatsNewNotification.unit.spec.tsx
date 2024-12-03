@@ -59,7 +59,7 @@ const setup = ({
       version: versionMock,
       "version-info": createMockVersionInfo({ latest, older }),
       "last-acknowledged-version": lastAcknowledged,
-      "application-name": isWhiteLabeling ? "My App" : "Metabase",
+      "application-name": isWhiteLabeling ? "My App" : "CloudVision",
       "token-features": createMockTokenFeatures({
         whitelabel: isWhiteLabeling,
       }),

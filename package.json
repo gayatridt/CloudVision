@@ -1,5 +1,5 @@
 {
-  "name": "metabase",
+  "name": "cloudvision",
   "private": true,
   "version": "0.0.0",
   "description": "Metabase Analytics Report Server",
@@ -227,6 +227,7 @@
     "babel-plugin-ttag": "^1.7.26",
     "chalk": "^4",
     "chromatic": "^10.2.0",
+    "clj-kondo": "^2024.2.12",
     "commander": "^12.1.0",
     "concurrently": "^8.2.2",
     "conventional-changelog-cli": "^5.0.0",

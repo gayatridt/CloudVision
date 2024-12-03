@@ -515,7 +515,7 @@
                 (is (= {"customer_id"   #{1 2 3}
                         "vip_customer"  #{42}
                         "name"          #{"Khuat" "Quang" "Ngoc"}
-                        "company"       #{"Metabase" "Tesla" "Apple"}
+                        "company"       #{"Cloud Vision" "Tesla" "Apple"}
                         "ev_company"    #{"Tesla"}
                         "is_awesome"    #{true false}
                         "is_opensource" #{true false}}

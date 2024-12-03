@@ -32,7 +32,7 @@
   :type       :string
   :audit      :getter
   :feature    :whitelabel
-  :default    "Metabase")
+  :default    "Cloud Vision")
 
 (defn application-name-for-setting-descriptions
   "Returns the value of the [[application-name]] setting so setting docstrings can be generated during the compilation stage.
@@ -41,7 +41,7 @@
    not allowed during compilation."
   []
   (if *compile-files*
-    "Metabase"
+    "Cloud Vision"
     (binding [config/*disable-setting-cache* true]
       (application-name))))
 
@@ -170,7 +170,7 @@
   (deferred-tru "The name used for this instance of {0}."
                 (application-name-for-setting-descriptions))
   :encryption :no
-  :default    "Metabase"
+  :default    "Cloud Vision"
   :audit      :getter
   :visibility :settings-manager
   :export?    true)

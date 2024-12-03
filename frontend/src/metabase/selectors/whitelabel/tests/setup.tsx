@@ -17,7 +17,7 @@ export interface SetupOpts {
 
 export function setup({
   loadingMessage = "doing-science",
-  applicationName = "Metabase",
+  applicationName = "Cloud Vision",
   showMetabaseLinks = true,
   tokenFeatures = {},
   hasEnterprisePlugins = false,

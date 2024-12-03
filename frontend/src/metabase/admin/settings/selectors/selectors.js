@@ -202,14 +202,14 @@ export const ADMIN_SETTINGS_SECTIONS = {
       {
         key: "email-from-name",
         display_name: t`From Name`,
-        placeholder: "Metabase",
+        placeholder: "Cloud Vision",
         type: "string",
         required: false,
       },
       {
         key: "email-from-address",
         display_name: t`From Address`,
-        placeholder: "metabase@yourcompany.com",
+        placeholder: "cloudvision@yourcompany.com",
         type: "string",
         required: true,
         validations: [["email", t`That's not a valid email address`]],

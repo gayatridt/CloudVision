@@ -106,7 +106,7 @@
                     invitor-first-name (mt/random-name)]
                 (with-setup! {:invite {:email email, :first_name first-name, :last_name last-name}
                               :user   {:first_name invitor-first-name}
-                              :prefs  {:site_name "Metabase"}}
+                              :prefs  {:site_name "Cloud Vision"}}
                   (let [invited-user (t2/select-one User :email email)]
                     (is (= (:first_name invited-user) first-name))
                     (is (= (:last_name invited-user) last-name))

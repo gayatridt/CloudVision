@@ -83,7 +83,7 @@ describe("getIsWhiteLabeling", () => {
   it('should return `false` if "application-name" is not changed', () => {
     const states = createMockState({
       settings: createMockSettingsState({
-        "application-name": "Metabase",
+        "application-name": "Cloud Vision",
       }),
     });
 

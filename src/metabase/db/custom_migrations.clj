@@ -1169,7 +1169,7 @@
                     :password_salt    salt
                     :password         password
                     :email            "internal@metabase.com"
-                    :first_name       "Metabase"
+                    :first_name       "Cloud Vision"
                     :locale           nil
                     :last_login       nil
                     :is_active        false

@@ -31,7 +31,7 @@
   "Generates the default query remark. Exists as a separate function so that overrides of the query->remark multimethod
    can access the default value."
   [{{:keys [executed-by query-hash], :as _info} :info, query-type :type}]
-  (str "Metabase" (when executed-by
+  (str "Cloud Vision" (when executed-by
                     (assert (bytes? query-hash) "If info includes executed-by it should also include query-hash")
                     (format ":: userID: %s queryType: %s queryHash: %s"
                             executed-by

@@ -33,17 +33,17 @@ describe("nav > containers > MainNavbar", () => {
     });
   });
 
-  describe("how to use Metabase", () => {
+  describe("how to use Cloud Vision", () => {
     it("should render for admins", async () => {
       await setup({ user: createMockUser({ is_superuser: true }) });
-      const link = screen.getByRole("link", { name: /How to use Metabase/i });
+      const link = screen.getByRole("link", { name: /How to use Cloud Vision/i });
       expect(link).toBeInTheDocument();
       expect(link).toHaveAttribute("href", "/getting-started");
     });
 
     it("should not render for non-admins", async () => {
       await setup({ user: createMockUser({ is_superuser: false }) });
-      const link = screen.queryByRole("link", { name: /How to use Metabase/i });
+      const link = screen.queryByRole("link", { name: /How to use Cloud Vision/i });
       expect(link).not.toBeInTheDocument();
     });
 
@@ -53,7 +53,7 @@ describe("nav > containers > MainNavbar", () => {
         user: createMockUser({ is_superuser: true }),
       });
       const link = screen.getByRole("listitem", {
-        name: /How to use Metabase/i,
+        name: /How to use Cloud Vision/i,
       });
       expect(link).toHaveAttribute("aria-selected", "true");
     });
@@ -63,7 +63,7 @@ describe("nav > containers > MainNavbar", () => {
         user: createMockUser({ is_superuser: true }),
         instanceCreationDate: dayjs().subtract(14, "days").toISOString(),
       });
-      const link = screen.getByRole("link", { name: /How to use Metabase/i });
+      const link = screen.getByRole("link", { name: /How to use Cloud Vision/i });
       expect(link).toBeInTheDocument();
     });
 
@@ -72,7 +72,7 @@ describe("nav > containers > MainNavbar", () => {
         user: createMockUser({ is_superuser: true }),
         instanceCreationDate: dayjs().subtract(31, "days").toISOString(),
       });
-      const link = screen.queryByRole("link", { name: /How to use Metabase/i });
+      const link = screen.queryByRole("link", { name: /How to use Cloud Vision/i });
       expect(link).not.toBeInTheDocument();
     });
   });

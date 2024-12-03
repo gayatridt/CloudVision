@@ -26,7 +26,7 @@
   ([]
    (doseq [ns-symb (ns.find/find-namespaces (classpath/system-classpath))
            :when (and
-                  (str/includes? (name ns-symb) "metabase")
+                  (str/includes? (name ns-symb) "cloudvision")
                   (not (str/includes? (name ns-symb) "test")))]
      (require ns-symb))
    (prep-settings @setting/registered-settings))

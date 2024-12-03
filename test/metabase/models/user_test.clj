@@ -116,7 +116,7 @@
   and return a map of addresses emails were sent to to the email subjects."
   [& {:keys [google-auth? accept-invite? password invitor]
       :or   {accept-invite? true}}]
-  (mt/with-temporary-setting-values [site-name "Metabase"]
+  (mt/with-temporary-setting-values [site-name "Cloud Vision"]
     (mt/with-fake-inbox
       (let [new-user-email      (mt/random-email)
             new-user-first-name (mt/random-name)

@@ -24,7 +24,7 @@ describeEE("Onboarding checklist page", () => {
     visitFullAppEmbeddingUrl({ url: "/", qs: {} });
     cy.findByTestId("main-navbar-root").within(() => {
       cy.findByRole("listitem", { name: "Home" }).should("be.visible");
-      cy.findByRole("listitem", { name: "How to use Metabase" }).should(
+      cy.findByRole("listitem", { name: "How to use Cloud Vision" }).should(
         "not.exist",
       );
     });
@@ -33,7 +33,7 @@ describeEE("Onboarding checklist page", () => {
     cy.visit("/");
     cy.findByTestId("main-navbar-root").within(() => {
       cy.findByRole("listitem", { name: "Home" }).should("be.visible");
-      cy.findByRole("listitem", { name: "How to use Metabase" }).should(
+      cy.findByRole("listitem", { name: "How to use Cloud Vision" }).should(
         "not.exist",
       );
     });
@@ -53,10 +53,10 @@ describeWithSnowplow("Onboarding checklist events", () => {
     expectNoBadSnowplowEvents();
   });
 
-  it('should track clicking on "How to use Metabase" button', () => {
+  it('should track clicking on "How to use Cloud Vision" button', () => {
     cy.visit("/");
     cy.findByTestId("main-navbar-root")
-      .findByRole("listitem", { name: "How to use Metabase" })
+      .findByRole("listitem", { name: "How to use Cloud Vision" })
       .click();
     cy.location("pathname").should("eq", "/getting-started");
     expectGoodSnowplowEvent({
@@ -98,7 +98,7 @@ describeWithSnowplow("Onboarding checklist events", () => {
       // Not strictly necessary but reduces the flakiness by allowing the page to load fully
       cy.findByTestId("main-navbar-root")
         .findByRole("listitem", {
-          name: "How to use Metabase",
+          name: "How to use Cloud Vision",
         })
         .should("have.attr", "aria-selected", "true");
 

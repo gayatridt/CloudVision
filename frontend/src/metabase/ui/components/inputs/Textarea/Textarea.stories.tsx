@@ -16,7 +16,7 @@ const args = {
 };
 
 const sampleArgs = {
-  value: "Metabase",
+  value: "Cloud Vision",
   label: "Company or team name",
   description: "Name used for this instance",
   placeholder: "Department of awesome",

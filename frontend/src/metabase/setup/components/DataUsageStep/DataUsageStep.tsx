@@ -68,7 +68,7 @@ export const DataUsageStep = ({
       label={stepLabel}
     >
       <StepDescription>
-        {t`In order to help us improve Metabase, we'd like to collect certain data about product usage.`}{" "}
+        {t`In order to help us improve CloudVision, we'd like to collect certain data about product usage.`}{" "}
         <ExternalLink
           href={docsUrl}
         >{t`Here's a full list of what we track and why.`}</ExternalLink>

@@ -498,7 +498,7 @@ describeWithSnowplow("scenarios > setup", () => {
         company_name: "Epic team",
       });
 
-      cy.findByText("What will you use Metabase for?").should("exist");
+      cy.findByText("What will you use CloudVision for?").should("exist");
       goodEvents++; // 6 - setup/step_seen "usage_question"
       expectGoodSnowplowEvent({
         event: "step_seen",

@@ -132,7 +132,7 @@ class SetupCheckList extends Component {
             <h2>{t`Getting set up`}</h2>
             <p
               className={CS.mt1}
-            >{t`A few things you can do to get the most out of Metabase.`}</p>
+            >{t`A few things you can do to get the most out of CloudVision.`}</p>
             <LoadingAndErrorWrapper
               loading={!this.state.tasks}
               error={this.state.error}
@@ -153,9 +153,9 @@ class SetupCheckList extends Component {
             </LoadingAndErrorWrapper>
           </div>
         </SetupListRoot>
-        <Box>
+        {false && ( <Box>
           <UpsellHosting source="settings-setup-migrate_to_cloud" />
-        </Box>
+        </Box>)}
       </Flex>
     );
   }

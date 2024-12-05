@@ -81,7 +81,7 @@ export const DataUsageStep = ({
           aria-labelledby="anonymous-usage-events-label"
         />
         <StepToggleLabel id="anonymous-usage-events-label">
-          {t`Allow Metabase to anonymously collect usage events`}
+          {t`Allow CloudVision to anonymously collect usage events`}
         </StepToggleLabel>
       </StepToggleContainer>
       {isTrackingAllowed && (

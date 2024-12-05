@@ -129,7 +129,7 @@ describe("scenarios > setup", () => {
           cy.findByText("All collection is completely anonymous.");
           // turn collection off, which hides data collection description
           cy.findByLabelText(
-            "Allow Metabase to anonymously collect usage events",
+            "Allow CloudVision to anonymously collect usage events",
           ).click();
 
           cy.findByText("All collection is completely anonymous.").should(
@@ -186,7 +186,7 @@ describe("scenarios > setup", () => {
 
       // Turns off anonymous data collection
       cy.findByLabelText(
-        "Allow Metabase to anonymously collect usage events",
+        "Allow CloudVision to anonymously collect usage events",
       ).click();
 
       cy.findByText("All collection is completely anonymous.").should(

@@ -596,7 +596,7 @@ describeWithSnowplow("scenarios > setup", () => {
 
 const skipWelcomePage = () => {
   cy.findByTestId("welcome-page").within(() => {
-    cy.findByText("Welcome to Metabase");
+    cy.findByText("Welcome to CloudVision");
     cy.findByText("Let's get started").click();
   });
 };

@@ -69,9 +69,9 @@ export const DataUsageStep = ({
     >
       <StepDescription>
         {t`In order to help us improve CloudVision, we'd like to collect certain data about product usage.`}{" "}
-        <ExternalLink
+        {/* <ExternalLink
           href={docsUrl}
-        >{t`Here's a full list of what we track and why.`}</ExternalLink>
+        >{t`Here's a full list of what we track and why.`}</ExternalLink> */}
       </StepDescription>
       <StepToggleContainer>
         <StepToggle
@@ -86,7 +86,7 @@ export const DataUsageStep = ({
       </StepToggleContainer>
       {isTrackingAllowed && (
         <StepInfoList>
-          <li>{jt`Metabase ${(
+          <li>{jt`CloudVision ${(
             <strong key="message">{t`never`}</strong>
           )} collects anything about your data or question results.`}</li>
           <li>{t`All collection is completely anonymous.`}</li>

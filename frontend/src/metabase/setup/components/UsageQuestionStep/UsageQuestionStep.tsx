@@ -67,11 +67,11 @@ export const UsageQuestionStep = ({ stepLabel }: NumberedStepProps) => {
             value="self-service-analytics"
             label={t`Self-service analytics for my own company`}
           />
-          <Radio
+          {/* <Radio
             value="embedding"
             label={t`Embedding analytics into my application`}
           />
-          <Radio value="both" label={t`A bit of both`} />
+          <Radio value="both" label={t`A bit of both`} /> */}
           <Radio value="not-sure" label={t`Not sure yet`} />
         </Stack>
       </Radio.Group>

@@ -65,7 +65,7 @@ export const CompletedStep = (): JSX.Element | null => {
           )}
           href={baseUrl}
         >
-          {t`Take me to Metabase`}
+          {t`Take me to CloudVision`}
         </a>
       </StepFooter>
     </StepRoot>

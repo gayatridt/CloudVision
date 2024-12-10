@@ -260,7 +260,7 @@
     :triggered   (>= (counts :table) 20)}
    {:title       (tru "Organize questions")
     :group       (tru "Curate your data")
-    :description (tru "Have a lot of saved questions in {0}? Create collections to help manage them and add context." (tru "Metabase"))
+    :description (tru "Have a lot of saved questions in {0}? Create collections to help manage them and add context." (tru "CloudVision"))
     :link        "/collection/root"
     :completed   (exists :collection)
     :triggered   (>= (counts :card) 30)}

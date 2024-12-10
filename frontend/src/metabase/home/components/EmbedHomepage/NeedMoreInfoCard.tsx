@@ -27,7 +27,7 @@ export const NeedMoreInfoCard = ({
         >
           {t`customer-facing analytics articles`}
         </ExternalLink>
-      )} to learn more about what Metabase offers.`}
+      )} to learn more about what CloudVision offers.`}
     </Text>
   </Card>
 );

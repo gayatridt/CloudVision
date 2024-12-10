@@ -216,12 +216,12 @@ export const PLUGIN_LDAP_FORM_FIELDS = {
 export const PLUGIN_IS_PASSWORD_USER: ((user: User) => boolean)[] = [];
 
 const defaultLandingPageIllustration = {
-  src: "app/img/bridge.svg",
+  src: "public/images/cloudbackground.png",
   isDefault: true,
 };
 
 const defaultLoginPageIllustration = {
-  src: "app/img/bridge.svg",
+  src: "public/images/cloudbackground.png",
   isDefault: true,
 };
 

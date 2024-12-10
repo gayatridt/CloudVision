@@ -90,9 +90,9 @@ export function SettingsUpdatesForm({
           </div>
         )}
       </div>
-      <div>
+      {/* <div>
         <UpsellHostingUpdates source="settings-updates-migrate_to_cloud" />
-      </div>
+      </div> */}
     </Flex>
   );
 }

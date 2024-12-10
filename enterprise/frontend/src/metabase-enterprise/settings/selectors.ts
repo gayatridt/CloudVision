@@ -10,7 +10,7 @@ import type {
   IllustrationSettingValue,
 } from "./types";
 
-const DEFAULT_LOGO_URL = "app/assets/img/logo.svg";
+const DEFAULT_LOGO_URL = "public/images/cloud_vision.png";
 
 const getCustomLogoUrl = (settingValues: EnterpriseSettings) => {
   return (
@@ -51,7 +51,7 @@ export function getLoginPageIllustration(
   switch (illustrationOption) {
     case "default":
       return {
-        src: "app/img/bridge.svg",
+        src: "public/images/cloudbackground.png",
         isDefault: true,
       };
 
@@ -77,7 +77,7 @@ export function getLandingPageIllustration(
   switch (illustrationOption) {
     case "default":
       return {
-        src: "app/img/bridge.svg",
+        src: "public/images/cloudbackground.png",
         isDefault: true,
       };
 

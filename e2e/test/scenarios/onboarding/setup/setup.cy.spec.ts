@@ -147,7 +147,7 @@ describe("scenarios > setup", () => {
             "Get infrequent emails about new releases and feature updates.",
           );
 
-          cy.findByText("Take me to Metabase").click();
+          cy.findByText("Take me to CloudVision").click();
         });
 
         cy.location("pathname").should("eq", "/");
@@ -155,7 +155,7 @@ describe("scenarios > setup", () => {
     );
   });
 
-  it("should set up Metabase without first name and last name (metabase#22754)", () => {
+  it("should set up CloudVision without first name and last name (metabase#22754)", () => {
     // This is a simplified version of the "scenarios > setup" test
     cy.visit("/");
 
@@ -202,12 +202,12 @@ describe("scenarios > setup", () => {
         "Get infrequent emails about new releases and feature updates.",
       ).click();
 
-      cy.findByText("Take me to Metabase").click();
+      cy.findByText("Take me to CloudVision").click();
     });
 
     cy.location("pathname").should("eq", "/");
 
-    main().findByText("Embed Metabase in your app").should("not.exist");
+    main().findByText("Embed CloudVision in your app").should("not.exist");
 
     cy.wait("@subscribe").then(({ request }) => {
       const formData = request.body;
@@ -289,11 +289,11 @@ describe("scenarios > setup", () => {
       .click();
 
     // make sure this bit of the form loads before clicking next
-    cy.findByLabelText(/What will you use Metabase for/).findByText(
+    cy.findByLabelText(/What will you use CloudVision for/).findByText(
       /Let us know your plans/,
     );
 
-    cy.findByLabelText(/What will you use Metabase for/)
+    cy.findByLabelText(/What will you use CloudVision for/)
       .button("Next")
       .click();
 
@@ -321,7 +321,7 @@ describe("scenarios > setup", () => {
       .findByText(/You're all set up/);
     cy.get("section")
       .last()
-      .findByRole("link", { name: "Take me to Metabase" })
+      .findByRole("link", { name: "Take me to CloudVision" })
       .click();
 
     // in app
@@ -367,7 +367,7 @@ describe("scenarios > setup", () => {
 
       // Turns off anonymous data collection
       cy.findByLabelText(
-        "Allow Metabase to anonymously collect usage events",
+        "Allow CloudVision to anonymously collect usage events",
       ).click();
 
       cy.findByText("All collection is completely anonymous.").should(
@@ -383,21 +383,21 @@ describe("scenarios > setup", () => {
       cy.intercept("GET", "/api/session/properties").as("properties");
       cy.get("section")
         .last()
-        .findByRole("link", { name: "Take me to Metabase" })
+        .findByRole("link", { name: "Take me to CloudVision" })
         .click();
     });
 
     cy.location("pathname").should("eq", "/");
 
     main()
-      .findByText("Get started with Embedding Metabase in your app")
+      .findByText("Get started with Embedding CloudVision in your app")
       .should("exist");
 
     // should persist page loads
     cy.reload();
 
     main()
-      .findByText("Get started with Embedding Metabase in your app")
+      .findByText("Get started with Embedding CloudVision in your app")
       .should("exist");
 
     main().findByText("Hide these").realHover();
@@ -405,7 +405,7 @@ describe("scenarios > setup", () => {
     popover().findByText("Embedding done, all good").click();
 
     main()
-      .findByText("Get started with Embedding Metabase in your app")
+      .findByText("Get started with Embedding CloudVision in your app")
       .should("not.exist");
   });
 });
@@ -437,7 +437,7 @@ describeEE("scenarios > setup (EE)", () => {
       cy.button("Activate").click();
 
       cy.findByText("Finish").click();
-      cy.findByText("Take me to Metabase").click();
+      cy.findByText("Take me to CloudVision").click();
     });
 
     cy.intercept("/api/premium-features/token/status").as("tokenStatus");

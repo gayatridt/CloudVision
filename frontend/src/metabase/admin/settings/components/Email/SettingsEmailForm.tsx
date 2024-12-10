@@ -57,9 +57,9 @@ export function SettingsEmailForm({
           reloadSettings={reloadSettings}
         />
       </Box>
-      <Box>
+      {/* <Box>
         <UpsellHosting source="settings-email-migrate_to_cloud" />
-      </Box>
+      </Box> */}
     </Flex>
   );
 }

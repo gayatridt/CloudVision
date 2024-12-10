@@ -21,7 +21,7 @@ export const InteractiveContent = ({
     >{t`Interactive embedding`}</Text>
     <Text mb="md">
       {/* eslint-disable-next-line no-literal-metabase-strings -- only visible to admins */}
-      {t`Interactive embedding allows you to embed the full Metabase app with iframes. It offers settings to customize appearance and includes the query builder with row-level access.`}
+      {t`Interactive embedding allows you to embed the full CloudVision app with iframes. It offers settings to customize appearance and includes the query builder with row-level access.`}
     </Text>
     <Group spacing="md">
       <ExternalLink href={interactiveEmbeddingQuickstartUrl}>

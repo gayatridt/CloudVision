@@ -153,9 +153,9 @@ class SetupCheckList extends Component {
             </LoadingAndErrorWrapper>
           </div>
         </SetupListRoot>
-        {false && ( <Box>
+        {/* {false && ( <Box>
           <UpsellHosting source="settings-setup-migrate_to_cloud" />
-        </Box>)}
+        </Box>)} */}
       </Flex>
     );
   }

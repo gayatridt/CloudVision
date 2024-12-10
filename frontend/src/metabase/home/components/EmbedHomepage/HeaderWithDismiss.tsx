@@ -14,7 +14,7 @@ export const HeaderWithDismiss = ({ onDismiss }: HeaderWithDismissProps) => {
       <Text
         fw="bold"
         // eslint-disable-next-line no-literal-metabase-strings -- This string only shows for admins.
-      >{t`Get started with Embedding Metabase in your app`}</Text>
+      >{t`Get started with Embedding CloudVision in your app`}</Text>
       <Menu trigger="hover" closeDelay={200}>
         <Menu.Target>
           <Text

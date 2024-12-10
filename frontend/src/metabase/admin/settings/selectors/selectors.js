@@ -181,19 +181,19 @@ export const ADMIN_SETTINGS_SECTIONS = {
       },
     ],
   },
-  updates: {
-    name: t`Updates`,
-    order: 30,
-    component: SettingsUpdatesForm,
-    settings: [
-      {
-        key: "check-for-updates",
-        display_name: t`Check for updates`,
-        type: "boolean",
-      },
-    ],
-    adminOnly: true,
-  },
+  // updates: {
+  //   name: t`Updates`,
+  //   order: 30,
+  //   component: SettingsUpdatesForm,
+  //   settings: [
+  //     {
+  //       key: "check-for-updates",
+  //       display_name: t`Check for updates`,
+  //       type: "boolean",
+  //     },
+  //   ],
+  //   adminOnly: true,
+  // },
   email: {
     name: t`Email`,
     order: 40,
@@ -321,7 +321,7 @@ export const ADMIN_SETTINGS_SECTIONS = {
       {
         key: "map-tile-server-url",
         display_name: t`Map tile server URL`,
-        note: t`Metabase uses OpenStreetMaps by default.`,
+        note: t`CloudVision uses OpenStreetMaps by default.`,
         type: "string",
       },
       {
@@ -433,30 +433,30 @@ export const ADMIN_SETTINGS_SECTIONS = {
       },
     ],
   },
-  "embedding-in-other-applications": {
-    key: "enable-embedding",
-    name: t`Embedding`,
-    order: 100,
-    component: EmbeddingSettings,
-    settings: [],
-  },
-  "embedding-in-other-applications/standalone": {
-    component: StaticEmbeddingSettings,
-    settings: [],
-  },
-  "embedding-in-other-applications/sdk": {
-    component: EmbeddingSdkSettings,
-    settings: [],
-  },
-  "embedding-in-other-applications/full-app": {
-    // We need to do this because EE plugins would load after this file in unit tests
-    component: ({ updateSetting }) => (
-      <PLUGIN_ADMIN_SETTINGS.InteractiveEmbeddingSettings
-        updateSetting={updateSetting}
-      />
-    ),
-    settings: [],
-  },
+  // "embedding-in-other-applications": {
+  //   key: "enable-embedding",
+  //   name: t`Embedding`,
+  //   order: 100,
+  //   component: EmbeddingSettings,
+  //   settings: [],
+  // },
+  // "embedding-in-other-applications/standalone": {
+  //   component: StaticEmbeddingSettings,
+  //   settings: [],
+  // },
+  // "embedding-in-other-applications/sdk": {
+  //   component: EmbeddingSdkSettings,
+  //   settings: [],
+  // },
+  // "embedding-in-other-applications/full-app": {
+  //   // We need to do this because EE plugins would load after this file in unit tests
+  //   component: ({ updateSetting }) => (
+  //     <PLUGIN_ADMIN_SETTINGS.InteractiveEmbeddingSettings
+  //       updateSetting={updateSetting}
+  //     />
+  //   ),
+  //   settings: [],
+  // },
   license: {
     name: t`License`,
     order: 110,
@@ -520,16 +520,16 @@ export const ADMIN_SETTINGS_SECTIONS = {
       },
     ],
   },
-  cloud: {
-    name: t`Cloud`,
-    getHidden: settings => {
-      settings["token-features"]?.hosting === true &&
-        !settings["airgap-enabled"];
-    },
-    order: 132,
-    component: CloudPanel,
-    settings: [],
-  },
+  // cloud: {
+  //   name: t`Cloud`,
+  //   getHidden: settings => {
+  //     settings["token-features"]?.hosting === true &&
+  //       !settings["airgap-enabled"];
+  //   },
+  //   order: 132,
+  //   component: CloudPanel,
+  //   settings: [],
+  // },
 };
 
 export const getSectionsWithPlugins = _.once(() =>

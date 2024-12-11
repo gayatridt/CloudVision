@@ -66,7 +66,7 @@ export const SdkUsageProblemBanner = ({
           data-testid="sdk-usage-problem-indicator"
         >
           <Flex bg="white" px="sm" py="xs" className={S.Logo}>
-            <LogoIcon height={24} fill={unthemedBrand} />
+            <LogoIcon height={24} width={24} fill={unthemedBrand} />
           </Flex>
 
           <Flex

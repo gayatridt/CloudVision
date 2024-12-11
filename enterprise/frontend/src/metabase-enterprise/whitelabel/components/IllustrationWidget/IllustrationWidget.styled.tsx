@@ -8,7 +8,7 @@ export const LighthouseImage = styled.div`
   width: 100px;
   height: 90px;
   filter: hue-rotate(${() => hueRotate("brand")}deg);
-  background-image: url("app/img/bridge.svg");
+  background-image: url("/images/cloudbackground.png");
   background-size: 26rem auto;
   background-repeat: no-repeat;
   background-position: 37.5% 50%;

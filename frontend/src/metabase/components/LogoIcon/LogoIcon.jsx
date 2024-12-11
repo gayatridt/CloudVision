@@ -3,14 +3,14 @@ import PropTypes from "prop-types";
 import cx from "classnames";
 
 import CS from "metabase/css/core/index.css";
-import logo from "../../../../public/images/cloud_vision.png"; // Ensure the path is correct
+import logo from "../../../../public/images/cloud_vision.png"; 
 
 // DefaultLogoIcon Component
 class DefaultLogoIcon extends React.Component {
   // Default properties
   static defaultProps = {
-    width: 66, // Default width for the logo
-    height: 85, // Default height for the logo
+    width: 50, // Default width for the logo
+    height: 50, // Default height for the logo
   };
 
   // Prop types validation
@@ -35,7 +35,7 @@ class DefaultLogoIcon extends React.Component {
           }
         )}
         width={width} // Image width
-        height={height} // Image height
+        height= {height} // Image height
         data-testid="main-logo" // Test ID for testing purposes
       />
     );

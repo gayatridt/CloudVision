@@ -28,7 +28,7 @@ export const AuthLayout = ({ children }: AuthLayoutProps): JSX.Element => {
         />
       )}
       <LayoutBody>
-        <LogoIcon height={65} />
+        <LogoIcon height={180} width={180}/>
         <LayoutCard>{children}</LayoutCard>
       </LayoutBody>
     </LayoutRoot>

@@ -111,7 +111,7 @@ function ProfileLink({ adminItems, onLogout }) {
             className={cx(CS.px4, CS.pt4, CS.pb2, CS.textCentered, CS.relative)}
           >
             <div className={cx(CS.textBrand, CS.pb2)}>
-              <LogoIcon height={48} />
+              <LogoIcon height={48} width={48}/>
             </div>
             <h2
               style={{ fontSize: "1.75em" }}

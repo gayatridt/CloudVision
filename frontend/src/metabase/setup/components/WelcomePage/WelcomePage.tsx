@@ -38,7 +38,7 @@ export const WelcomePage = (): JSX.Element | null => {
   return (
     <PageRoot data-testid="welcome-page">
       <PageMain>
-        <LogoIcon height={118} />
+        <LogoIcon height={180} width={180}/>
         <PageTitle>{t`Welcome to Cloud Vision`}</PageTitle>
         <PageBody>
           {t`Looks like everything is working.`}{" "}

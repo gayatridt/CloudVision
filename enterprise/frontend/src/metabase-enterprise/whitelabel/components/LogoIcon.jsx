@@ -18,7 +18,7 @@ class LogoIcon extends Component {
   };
 
   static defaultProps = {
-    height: 32,
+    height: 50,
   };
 
   static propTypes = {
@@ -121,7 +121,7 @@ class LogoIcon extends Component {
 
   render() {
     const { dark, style = {}, className } = this.props;
-    style.height ||= "32px";
+    style.height ||= "50px";
     return (
       <span
         ref={c => (this._container = c)}

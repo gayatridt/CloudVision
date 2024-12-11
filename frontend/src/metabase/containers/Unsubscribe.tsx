@@ -197,7 +197,7 @@ function UnsubscribeRoot({ children }: { children: JSX.Element }) {
       <LayoutBody>
         <Center mih={"100%"} miw={"100%"}>
           <Stack>
-            <LogoIcon height={65}></LogoIcon>
+            <LogoIcon height={65} width={65}></LogoIcon>
             <LayoutCard>{children}</LayoutCard>
           </Stack>
         </Center>

@@ -51,7 +51,7 @@ export function getLoginPageIllustration(
   switch (illustrationOption) {
     case "default":
       return {
-        src: "public/images/cloudbackground.png",
+        src: ("/images/cloudbackground.png"),
         isDefault: true,
       };
 
@@ -77,7 +77,7 @@ export function getLandingPageIllustration(
   switch (illustrationOption) {
     case "default":
       return {
-        src: "public/images/cloudbackground.png",
+        src: ("/images/cloudbackground.png"),
         isDefault: true,
       };
 

@@ -34,7 +34,7 @@ export const SettingsPage = (): JSX.Element => {
   return (
     <div data-testid="setup-forms">
       <PageHeader>
-        <LogoIcon height={51} />
+        <LogoIcon height={51} width={51}/>
       </PageHeader>
       <PageBody>
         {steps.map(({ key }, index) => {

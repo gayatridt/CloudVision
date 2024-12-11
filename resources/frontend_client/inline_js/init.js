@@ -1,6 +1,5 @@
 const content = [
   ["no-sql-required", "Make decisions with data — no SQL required"],
-  ["bring-data-to-slack", "Bring your charts and data into Slack"],
   ["click-charts-dive-deeper", "Click on your charts to dive deeper"],
   [
     "click-column-headings",

@@ -84,6 +84,13 @@ RUN curl https://truststore.pki.rds.amazonaws.com/global/global-bundle.pem -o /a
 # Set environment variables for database configuration
 ENV MB_DB_FILE=/app/metabase-data/metabase.db
 
+ENV MB_DB_TYPE=postgres
+ENV MB_DB_HOST=localhost
+ENV MB_DB_PORT=5432
+ENV MB_DB_DBNAME=test_db
+ENV MB_DB_USER=your-username
+ENV MB_DB_PASS=your-password
+
 # Copy the built application from the builder stage
 COPY --from=builder /home/node/target/uberjar/metabase.jar /app/
 
